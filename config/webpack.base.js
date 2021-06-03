@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 
+// TODO: webpack 打包部分可以用 @hlj/webpack 库优化
+
 const Appconfig = path => ({
   entry: {
     main: './src/index.tsx'
