@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const RuxConsolePlugin = require('../plugins/rux-console-pulgin');
+const MycliConsolePlugin = require('../plugin');
 const devConfig = path => {
   return {
     devtool: 'cheap-module-eval-source-map',
@@ -16,7 +16,7 @@ const devConfig = path => {
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
-      new RuxConsolePlugin({
+      new MycliConsolePlugin({
         dec: 1
       })
     ]
